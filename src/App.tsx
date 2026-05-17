@@ -21,8 +21,8 @@ const INVITATION = {
   venue: {
     name: "Thilanka Hotel",
     city: "Kandy",
-    mapQuery: "Thilanka Hotel, Kandy",
-    googleMapsLink: "https://www.google.com/maps/place/Thilanka+Hotel,+Kandy/",
+    mapQuery: "Thilanka Hotel, 3 Sangaraja Mawatha, Kandy 20000, Sri Lanka",
+    googleMapsLink: "https://maps.app.goo.gl/y3BM1ykzMdRrFV5b8",
   },
   rsvpContacts: [
     "Chamodi: ",
@@ -1192,7 +1192,7 @@ export default function WeddingInvitation() {
                         style={{ border: 0 }}
                         allowFullScreen
                         loading="lazy"
-                        className="w-full h-full grayscale-[0.85] contrast-150 sepia-[0.2] brightness-[1.05] hover:grayscale-0 hover:sepia-0 hover:contrast-100 transition-all duration-1000 scale-[1.02] group-hover:scale-100"
+                        className="w-full h-full transition-all duration-1000 scale-[1.02] group-hover:scale-100"
                       />
 
                       {/* Decorative Frame Overlays */}
