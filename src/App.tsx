@@ -25,9 +25,8 @@ const INVITATION = {
     googleMapsLink: "https://maps.app.goo.gl/y3BM1ykzMdRrFV5b8",
   },
   rsvpContacts: [
-    "Chamodi: ",
-    "Chamika: ",
-    "Family: ",
+    "Chamodi 0772261022",
+    "Chamika Mom 0771537039",
   ],
 } as const;
 
@@ -36,7 +35,7 @@ const googleScriptUrl = "https://script.google.com/macros/s/AKfycbyHN1BshRvxx96e
 
 const publicImagePath = (fileName: string) => `/images/${fileName.replaceAll(" ", "%20")}`;
 
-const HERO_BACKGROUND_IMAGE = publicImagePath("1 (4).jpg");
+const HERO_BACKGROUND_IMAGE = publicImagePath("b.jpeg");
 const FEATURED_COUPLE_IMAGE = publicImagePath("1 (6).jpg");
 
 const LOVE_STORY = [
@@ -623,83 +622,7 @@ export default function WeddingInvitation() {
                   </div>
                 </motion.div>
 
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="mb-8"
-                >
-                  <h2 className="font-cinzel text-xl md:text-2xl text-[#5c715e] tracking-[0.5em] font-bold uppercase">Wedding Celebration</h2>
-                </motion.div>
 
-
-
-                {/* Names Card */}
-                <div className="relative w-full flex flex-col items-center justify-center my-12 mb-24">
-                  <motion.div
-                    initial={{ opacity: 0, y: 24 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="relative z-20 w-full max-w-[560px] bg-white p-8 md:p-14 shadow-[0_30px_70px_-15px_rgba(135,147,122,0.2)] border border-[#c7d7c4]/50 flex flex-col items-center justify-center text-center"
-                  >
-                    <div className="absolute inset-2 border-[0.5px] border-[#5c715e]/30 pointer-events-none" />
-
-                    <div className="space-y-5 mb-10">
-                      <div className="flex flex-col items-center gap-2">
-                        <span className="text-[9px] uppercase tracking-[0.6em] font-bold text-[#3f5240]/50">Bride</span>
-                        <h3 className="text-5xl md:text-7xl font-playball text-[#5c715e] leading-none">{INVITATION.couple.bride}</h3>
-                      </div>
-                    </div>
-
-                    <div className="py-2 flex items-center justify-center w-full relative">
-                      <div className="absolute inset-0 flex items-center" aria-hidden="true">
-                        <div className="w-full border-t border-[#c7d7c4]/50"></div>
-                      </div>
-                      <div className="relative flex justify-center">
-                        <span className="bg-white px-6 font-playball text-4xl text-[#5c715e]">With</span>
-                      </div>
-                    </div>
-
-                    <div className="space-y-5 mt-10">
-                      <div className="flex flex-col items-center gap-2">
-                        <span className="text-[9px] uppercase tracking-[0.6em] font-bold text-[#3f5240]/50">Groom</span>
-                        <h3 className="text-5xl md:text-7xl font-playball text-[#5c715e] leading-none">{INVITATION.couple.groom}</h3>
-                      </div>
-                    </div>
-
-                    <div className="mt-12 grid grid-cols-1 gap-6 w-full text-left">
-                      <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 rounded-full border border-[#5c715e]/20 flex items-center justify-center shrink-0">
-                          <Calendar className="w-4 h-4 text-[#5c715e]" />
-                        </div>
-                        <div>
-                          <div className="text-[9px] uppercase tracking-[0.5em] font-bold text-[#3f5240]/40 font-cinzel">Date</div>
-                          <div className="text-sm md:text-base text-[#3f5240] font-cinzel tracking-wide font-bold">{INVITATION.date.displayLong}</div>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 rounded-full border border-[#5c715e]/20 flex items-center justify-center shrink-0">
-                          <Clock className="w-4 h-4 text-[#5c715e]" />
-                        </div>
-                        <div>
-                          <div className="text-[9px] uppercase tracking-[0.5em] font-bold text-[#3f5240]/40 font-cinzel">Time</div>
-                          <div className="text-sm md:text-base text-[#3f5240] font-cinzel tracking-wide font-bold">Wedding Ceremony at {INVITATION.time.ceremony}</div>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 rounded-full border border-[#5c715e]/20 flex items-center justify-center shrink-0">
-                          <MapPin className="w-4 h-4 text-[#5c715e]" />
-                        </div>
-                        <div>
-                          <div className="text-[9px] uppercase tracking-[0.5em] font-bold text-[#3f5240]/40 font-cinzel">Venue</div>
-                          <div className="text-sm md:text-base text-[#3f5240] font-cinzel tracking-wide font-bold">{INVITATION.venue.name}, {INVITATION.venue.city}</div>
-                        </div>
-                      </div>
-                    </div>
-                  </motion.div>
-                </div>
 
               </div>
             </section>
@@ -938,56 +861,191 @@ export default function WeddingInvitation() {
               </div>
             </section>
 
-            {/* Schedule Section (No Images) */}
+            {/* Engagement Details Section */}
             <section className="relative py-20 md:py-28 bg-white overflow-hidden">
               <div className="container mx-auto px-6 max-w-5xl relative z-10 text-center">
                 <motion.div
-                  initial={{ opacity: 0, y: 18 }}
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="space-y-6 mb-12"
+                  className="mb-8"
                 >
-                  <div className="flex flex-col items-center gap-3">
-                    <span className="text-[#3f5240] font-bold uppercase tracking-[0.6em] text-[10px] md:text-xs opacity-50">THE DAY</span>
-                    <div className="h-px w-16 bg-[#5c715e]/30" />
-                  </div>
-                  <h2 className="font-playball text-5xl md:text-7xl bg-gradient-to-r from-[#5c715e] via-[#3f5240] to-[#5c715e] bg-clip-text text-transparent leading-none drop-shadow-sm italic">Schedule</h2>
-                  <p className="text-[#3f5240]/70 text-xs md:text-sm tracking-[0.3em] font-medium uppercase font-cinzel max-w-2xl mx-auto pt-2 leading-loose">
-                    A simple outline of the celebration.
-                  </p>
+                  <h2 className="font-cinzel text-xl md:text-2xl text-[#5c715e] tracking-[0.5em] font-bold uppercase">Engagement</h2>
                 </motion.div>
 
-                <div className="mx-auto max-w-2xl text-left bg-[#fdfaf5] border border-[#c7d7c4]/40 shadow-[0_30px_70px_-20px_rgba(135,147,122,0.15)]">
-                  <div className="p-8 md:p-12 space-y-8">
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-full border border-[#5c715e]/20 flex items-center justify-center shrink-0">
-                        <Calendar className="w-4 h-4 text-[#5c715e]" />
-                      </div>
-                      <div>
-                        <div className="text-[9px] uppercase tracking-[0.5em] font-bold text-[#3f5240]/40 font-cinzel">Date</div>
-                        <div className="text-sm md:text-base text-[#3f5240] font-cinzel tracking-wide font-bold">{INVITATION.date.displayLong}</div>
+                {/* Names Card */}
+                <div className="relative w-full flex flex-col items-center justify-center my-12 mb-24">
+                  <motion.div
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="relative z-20 w-full max-w-[560px] bg-white p-8 md:p-14 shadow-[0_30px_70px_-15px_rgba(135,147,122,0.2)] border border-[#c7d7c4]/50 flex flex-col items-center justify-center text-center mx-auto"
+                  >
+                    <div className="absolute inset-2 border-[0.5px] border-[#5c715e]/30 pointer-events-none" />
+
+                    <div className="space-y-5 mb-10">
+                      <div className="flex flex-col items-center gap-2">
+                        <span className="text-[9px] uppercase tracking-[0.6em] font-bold text-[#3f5240]/50">Bride</span>
+                        <h3 className="text-5xl md:text-7xl font-playball text-[#5c715e] leading-none">{INVITATION.couple.bride}</h3>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-full border border-[#5c715e]/20 flex items-center justify-center shrink-0">
-                        <Clock className="w-4 h-4 text-[#5c715e]" />
+                    <div className="py-2 flex items-center justify-center w-full relative">
+                      <div className="absolute inset-0 flex items-center" aria-hidden="true">
+                        <div className="w-full border-t border-[#c7d7c4]/50"></div>
                       </div>
-                      <div>
-                        <div className="text-[9px] uppercase tracking-[0.5em] font-bold text-[#3f5240]/40 font-cinzel">Wedding Ceremony</div>
-                        <div className="text-sm md:text-base text-[#3f5240] font-cinzel tracking-wide font-bold">{INVITATION.time.ceremony}</div>
+                      <div className="relative flex justify-center">
+                        <span className="bg-white px-6 font-playball text-4xl text-[#5c715e]">With</span>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-full border border-[#5c715e]/20 flex items-center justify-center shrink-0">
-                        <MapPin className="w-4 h-4 text-[#5c715e]" />
-                      </div>
-                      <div>
-                        <div className="text-[9px] uppercase tracking-[0.5em] font-bold text-[#3f5240]/40 font-cinzel">Venue</div>
-                        <div className="text-sm md:text-base text-[#3f5240] font-cinzel tracking-wide font-bold">{INVITATION.venue.name}, {INVITATION.venue.city}</div>
+                    <div className="space-y-5 mt-10">
+                      <div className="flex flex-col items-center gap-2">
+                        <span className="text-[9px] uppercase tracking-[0.6em] font-bold text-[#3f5240]/50">Groom</span>
+                        <h3 className="text-5xl md:text-7xl font-playball text-[#5c715e] leading-none">{INVITATION.couple.groom}</h3>
                       </div>
                     </div>
+
+                    <div className="mt-12 grid grid-cols-1 gap-6 w-full text-left">
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-full border border-[#5c715e]/20 flex items-center justify-center shrink-0">
+                          <Calendar className="w-4 h-4 text-[#5c715e]" />
+                        </div>
+                        <div>
+                          <div className="text-[9px] uppercase tracking-[0.5em] font-bold text-[#3f5240]/40 font-cinzel">Date</div>
+                          <div className="text-sm md:text-base text-[#3f5240] font-cinzel tracking-wide font-bold">{INVITATION.date.displayLong}</div>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-full border border-[#5c715e]/20 flex items-center justify-center shrink-0">
+                          <Clock className="w-4 h-4 text-[#5c715e]" />
+                        </div>
+                        <div>
+                          <div className="text-[9px] uppercase tracking-[0.5em] font-bold text-[#3f5240]/40 font-cinzel">Time</div>
+                          <div className="text-sm md:text-base text-[#3f5240] font-cinzel tracking-wide font-bold">Wedding Ceremony at {INVITATION.time.ceremony}</div>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-full border border-[#5c715e]/20 flex items-center justify-center shrink-0">
+                          <MapPin className="w-4 h-4 text-[#5c715e]" />
+                        </div>
+                        <div>
+                          <div className="text-[9px] uppercase tracking-[0.5em] font-bold text-[#3f5240]/40 font-cinzel">Venue</div>
+                          <div className="text-sm md:text-base text-[#3f5240] font-cinzel tracking-wide font-bold">{INVITATION.venue.name}, {INVITATION.venue.city}</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="space-y-6 mt-12 pt-10 border-t border-[#c7d7c4]/50 w-full text-center">
+                      <p className="text-[#3f5240] text-lg md:text-xl font-light italic leading-relaxed font-playball">
+                        "May our celebration be as infinite as the ocean and as warm as the tropical sun."
+                      </p>
+                      <button
+                        onClick={() => window.open(INVITATION.venue.googleMapsLink, "_blank")}
+                        className="w-full group relative inline-flex items-center justify-center gap-4 py-6 bg-[#3f5240] text-white text-[10px] md:text-xs font-bold uppercase tracking-[0.5em] overflow-hidden transition-all hover:bg-black shadow-xl mt-4"
+                      >
+                        <div className="absolute inset-0 bg-white/5 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-700" />
+                        <span className="relative z-10 flex items-center gap-3">
+                          <MapPin className="w-4 h-4" />
+                          Launch Digital Map
+                        </span>
+                      </button>
+                    </div>
+                  </motion.div>
+                </div>
+              </div>
+            </section>
+
+
+            {/* Venue Location Section */}
+            <section className="relative py-28 md:py-48 bg-[#fdfaf5] overflow-hidden">
+              {/* Floral Decorations */}
+              <img src="/images/44.png" className="absolute top-0 right-0 w-32 sm:w-48 md:w-64 z-20 pointer-events-none opacity-80" alt="" />
+              <img src="/images/f.png" className="absolute bottom-0 left-0 w-32 sm:w-48 md:w-64 z-20 pointer-events-none opacity-80" alt="" />
+
+              {/* Decorative Geometric Elements (CSS-Based UI Decorations) */}
+              <div className="absolute -top-24 -left-24 w-[500px] h-[500px] border border-[#5c715e]/10 rounded-full flex items-center justify-center opacity-30 pointer-events-none">
+                <div className="w-[80%] h-[80%] border border-[#3f5240]/10 rounded-full" />
+                <div className="w-[60%] h-[60%] border border-[#5c715e]/10 rounded-full" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-px h-full bg-gradient-to-b from-transparent via-[#5c715e]/20 to-transparent rotate-45" />
+              </div>
+
+              <div className="container mx-auto px-6 max-w-7xl relative z-10 text-center">
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="space-y-10 mb-24"
+                >
+                  <div className="flex flex-col items-center gap-4">
+                    <span className="text-[#3f5240] font-bold uppercase tracking-[0.8em] text-[10px] md:text-xs opacity-40">T H E · V E N U E</span>
+                    <div className="flex items-center gap-2">
+                      {[1, 2, 3].map((i) => (
+                        <div key={i} className={`w-1.5 h-1.5 rotate-45 ${i === 2 ? "bg-[#5c715e]" : "bg-[#3f5240]/20"}`} />
+                      ))}
+                    </div>
+                  </div>
+
+                  <h2 className="font-cinzel text-5xl md:text-9xl bg-gradient-to-br from-[#5c715e] to-[#2c3a2d] bg-clip-text text-transparent leading-tight font-light uppercase tracking-tight relative">
+                    {INVITATION.venue.name.split(" ")[0].toUpperCase()} <span className="block md:inline font-playball normal-case text-4xl md:text-8xl bg-gradient-to-r from-[#3f5240] to-[#5c715e] bg-clip-text text-transparent md:-ml-8 relative z-10 translate-y-4 md:translate-y-0 italic drop-shadow-sm">{INVITATION.venue.name.split(" ").slice(1).join(" ")}</span>
+                  </h2>
+
+                  <div className="max-w-xl mx-auto pt-10 relative">
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-[#c7d7c4]" />
+                    <p className="text-[#3f5240]/80 text-sm md:text-base tracking-[0.2em] font-medium uppercase font-cinzel leading-loose pt-8">
+                      WHERE TRADITION MEETS THE BEAUTY OF NEW BEGINNINGS
+                    </p>
+                  </div>
+                </motion.div>
+
+                <div className="max-w-4xl mx-auto w-full">
+                  {/* Architectural Map Frame */}
+                  <div>
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 1.2, ease: "circOut" }}
+                      className="relative w-full aspect-[4/3] md:aspect-video lg:aspect-[4/3] rounded-[3rem] overflow-hidden shadow-[0_80px_150px_-30px_rgba(0,0,0,0.25)] group bg-white"
+                    >
+                      {/* The Map */}
+                      <iframe
+                        src={`https://maps.google.com/maps?q=${encodeURIComponent(INVITATION.venue.mapQuery)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        className="w-full h-full transition-all duration-1000 scale-[1.02] group-hover:scale-100"
+                      />
+
+                      {/* Decorative Frame Overlays */}
+                      <div className="absolute inset-0 pointer-events-none border-[15px] md:border-[25px] border-white/95 rounded-[3rem]" />
+                      <div className="absolute inset-8 md:inset-12 pointer-events-none border border-white/20 rounded-[2.5rem]" />
+
+                      {/* Arched Corner Floating Element (No image used) */}
+                      <div className="absolute top-0 right-0 w-40 h-40 bg-white/90 backdrop-blur-md flex flex-col items-center justify-center rounded-bl-full shadow-2xl p-8 transform translate-x-4 -translate-y-4 group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform duration-700">
+                        <MapPin className="w-8 h-8 text-[#3f5240] mb-2 opacity-80" />
+                        <span className="text-[8px] font-bold uppercase tracking-widest text-[#3f5240]/50">Explore</span>
+                      </div>
+
+                      {/* Subtle lens flare overlay */}
+                      <div className="absolute inset-0 pointer-events-none bg-gradient-to-tr from-[#5c715e]/5 to-transparent mix-blend-overlay" />
+                    </motion.div>
+
+                    {/* Bottom Floating Card Decoration */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.6 }}
+                      className="inline-flex items-center gap-4 mt-8 px-8 py-3 bg-white border border-[#c7d7c4]/40 shadow-lg rounded-full"
+                    >
+                      <Sparkles className="w-4 h-4 text-[#5c715e]" />
+                      <span className="text-[10px] md:text-xs font-bold text-[#3f5240] uppercase tracking-widest">{INVITATION.venue.city}</span>
+                    </motion.div>
                   </div>
                 </div>
               </div>
@@ -1072,158 +1130,6 @@ export default function WeddingInvitation() {
               </div>
             </section>
 
-
-            {/* Venue Location Section */}
-            <section className="relative py-28 md:py-48 bg-[#fdfaf5] overflow-hidden">
-              {/* Floral Decorations */}
-              <img src="/images/44.png" className="absolute top-0 right-0 w-32 sm:w-48 md:w-64 z-20 pointer-events-none opacity-80" alt="" />
-              <img src="/images/f.png" className="absolute bottom-0 left-0 w-32 sm:w-48 md:w-64 z-20 pointer-events-none opacity-80" alt="" />
-
-              {/* Decorative Geometric Elements (CSS-Based UI Decorations) */}
-              <div className="absolute -top-24 -left-24 w-[500px] h-[500px] border border-[#5c715e]/10 rounded-full flex items-center justify-center opacity-30 pointer-events-none">
-                <div className="w-[80%] h-[80%] border border-[#3f5240]/10 rounded-full" />
-                <div className="w-[60%] h-[60%] border border-[#5c715e]/10 rounded-full" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-px h-full bg-gradient-to-b from-transparent via-[#5c715e]/20 to-transparent rotate-45" />
-              </div>
-
-              <div className="container mx-auto px-6 max-w-7xl relative z-10 text-center">
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="space-y-10 mb-24"
-                >
-                  <div className="flex flex-col items-center gap-4">
-                    <span className="text-[#3f5240] font-bold uppercase tracking-[0.8em] text-[10px] md:text-xs opacity-40">T H E · V E N U E</span>
-                    <div className="flex items-center gap-2">
-                      {[1, 2, 3].map((i) => (
-                        <div key={i} className={`w-1.5 h-1.5 rotate-45 ${i === 2 ? "bg-[#5c715e]" : "bg-[#3f5240]/20"}`} />
-                      ))}
-                    </div>
-                  </div>
-
-                  <h2 className="font-cinzel text-5xl md:text-9xl bg-gradient-to-br from-[#5c715e] to-[#2c3a2d] bg-clip-text text-transparent leading-tight font-light uppercase tracking-tight relative">
-                    {INVITATION.venue.name.split(" ")[0].toUpperCase()} <span className="block md:inline font-playball normal-case text-4xl md:text-8xl bg-gradient-to-r from-[#3f5240] to-[#5c715e] bg-clip-text text-transparent md:-ml-8 relative z-10 translate-y-4 md:translate-y-0 italic drop-shadow-sm">{INVITATION.venue.name.split(" ").slice(1).join(" ")}</span>
-                  </h2>
-
-                  <div className="max-w-xl mx-auto pt-10 relative">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-[#c7d7c4]" />
-                    <p className="text-[#3f5240]/80 text-sm md:text-base tracking-[0.2em] font-medium uppercase font-cinzel leading-loose pt-8">
-                      WHERE TRADITION MEETS THE BEAUTY OF NEW BEGINNINGS
-                    </p>
-                  </div>
-                </motion.div>
-
-                <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
-                  {/* Left: Atmospheric Location Card */}
-                  <div className="lg:col-span-5 text-left order-2 lg:order-1">
-                    <motion.div
-                      initial={{ opacity: 0, x: -40 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.2, duration: 0.8 }}
-                      className="bg-white p-10 md:p-16 shadow-[0_60px_100px_-40px_rgba(135,147,122,0.2)] border border-[#c7d7c4]/30 relative group"
-                    >
-                      {/* Interactive hover ornament */}
-                      <div className="absolute inset-2 border-[0.5px] border-[#5c715e]/20 pointer-events-none group-hover:border-[#5c715e]/40 transition-colors duration-700" />
-
-                      <div className="space-y-12 relative z-10">
-                        <div className="space-y-6">
-                          <p className="text-[#3f5240] text-xl md:text-2xl font-light italic leading-relaxed font-playball text-center lg:text-left">
-                            "May our celebration be as infinite as the ocean and as warm as the tropical sun."
-                          </p>
-                          <div className="h-0.5 w-12 bg-[#c7d7c4]/60 mx-auto lg:ml-0" />
-                        </div>
-
-                        <div className="space-y-10">
-                          <div className="flex items-start gap-8">
-                            <div className="w-12 h-12 rounded-full border border-[#5c715e]/20 flex items-center justify-center shrink-0">
-                              <MapPin className="w-5 h-5 text-[#5c715e]" />
-                            </div>
-                            <div className="space-y-3">
-                              <h4 className="text-[#3f5240]/40 font-bold text-[10px] uppercase tracking-[0.5em] font-cinzel">The Destination</h4>
-                              <p className="text-xl md:text-2xl text-[#3f5240] font-cinzel leading-relaxed tracking-wide font-bold">
-                                {INVITATION.venue.name}, {INVITATION.venue.city}
-                              </p>
-                            </div>
-                          </div>
-
-                          <div className="flex items-start gap-8">
-                            <div className="w-12 h-12 rounded-full border border-[#5c715e]/20 flex items-center justify-center shrink-0">
-                              <Clock className="w-5 h-5 text-[#5c715e]" />
-                            </div>
-                            <div className="space-y-1">
-                              <h4 className="text-[#3f5240]/40 font-bold text-[10px] uppercase tracking-[0.5em] font-cinzel">The Wedding Ceremony</h4>
-                              <p className="text-xl md:text-2xl text-[#3f5240] font-cinzel leading-relaxed tracking-wide font-bold">
-                                {INVITATION.time.ceremony}
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <button
-                          onClick={() => window.open(INVITATION.venue.googleMapsLink, "_blank")}
-                          className="w-full group relative inline-flex items-center justify-center gap-4 py-6 bg-[#3f5240] text-white text-[10px] md:text-xs font-bold uppercase tracking-[0.5em] overflow-hidden transition-all hover:bg-black shadow-xl mt-4"
-                        >
-                          <div className="absolute inset-0 bg-white/5 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-700" />
-                          <span className="relative z-10 flex items-center gap-3">
-                            <MapPin className="w-4 h-4" />
-                            Launch Digital Map
-                          </span>
-                        </button>
-                      </div>
-                    </motion.div>
-                  </div>
-
-                  {/* Right: Architectural Map Frame */}
-                  <div className="lg:col-span-7 order-1 lg:order-2">
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.95 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1.2, ease: "circOut" }}
-                      className="relative w-full aspect-[4/3] md:aspect-video lg:aspect-[4/3] rounded-[3rem] overflow-hidden shadow-[0_80px_150px_-30px_rgba(0,0,0,0.25)] group bg-white"
-                    >
-                      {/* The Map */}
-                      <iframe
-                        src={`https://maps.google.com/maps?q=${encodeURIComponent(INVITATION.venue.mapQuery)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
-                        width="100%"
-                        height="100%"
-                        style={{ border: 0 }}
-                        allowFullScreen
-                        loading="lazy"
-                        className="w-full h-full transition-all duration-1000 scale-[1.02] group-hover:scale-100"
-                      />
-
-                      {/* Decorative Frame Overlays */}
-                      <div className="absolute inset-0 pointer-events-none border-[15px] md:border-[25px] border-white/95 rounded-[3rem]" />
-                      <div className="absolute inset-8 md:inset-12 pointer-events-none border border-white/20 rounded-[2.5rem]" />
-
-                      {/* Arched Corner Floating Element (No image used) */}
-                      <div className="absolute top-0 right-0 w-40 h-40 bg-white/90 backdrop-blur-md flex flex-col items-center justify-center rounded-bl-full shadow-2xl p-8 transform translate-x-4 -translate-y-4 group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform duration-700">
-                        <MapPin className="w-8 h-8 text-[#3f5240] mb-2 opacity-80" />
-                        <span className="text-[8px] font-bold uppercase tracking-widest text-[#3f5240]/50">Explore</span>
-                      </div>
-
-                      {/* Subtle lens flare overlay */}
-                      <div className="absolute inset-0 pointer-events-none bg-gradient-to-tr from-[#5c715e]/5 to-transparent mix-blend-overlay" />
-                    </motion.div>
-
-                    {/* Bottom Floating Card Decoration */}
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.6 }}
-                      className="inline-flex items-center gap-4 mt-8 px-8 py-3 bg-white border border-[#c7d7c4]/40 shadow-lg rounded-full"
-                    >
-                      <Sparkles className="w-4 h-4 text-[#5c715e]" />
-                      <span className="text-[10px] md:text-xs font-bold text-[#3f5240] uppercase tracking-widest">{INVITATION.venue.city}</span>
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
-            </section>
 
             {/* RSVP Section (No Images) */}
             <section className="relative py-32 md:py-48 bg-[#f8f6f2] flex flex-col items-center overflow-hidden">
