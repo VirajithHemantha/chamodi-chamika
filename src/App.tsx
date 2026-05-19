@@ -408,7 +408,7 @@ export default function WeddingInvitation() {
                     transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                     className="mb-12"
                   >
-                    <h2 className="font-playball text-4xl md:text-6xl text-white mb-2 drop-shadow-2xl">The Wedding of</h2>
+                    <h2 className="font-playball text-4xl md:text-6xl text-white mb-2 drop-shadow-2xl">The Engagement of</h2>
                     <p className="font-cinzel text-xl md:text-2xl text-[#c7d7c4] tracking-[0.3em] uppercase drop-shadow-lg">{INVITATION.couple.bride} & {INVITATION.couple.groom}</p>
                   </motion.div>
 
@@ -454,7 +454,7 @@ export default function WeddingInvitation() {
                     transition={{ duration: 2, delay: 0.8 }}
                     className="font-playball text-4xl md:text-7xl text-[#3f5240] mb-6 drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]"
                   >
-                    Wedding Invitation
+                    Engagement Invitation
                   </motion.h2>
                   <motion.div
                     initial={{ scaleX: 0 }}
@@ -521,7 +521,7 @@ export default function WeddingInvitation() {
                   animate={{ opacity: 0.75, y: 0 }}
                   className="text-[10px] md:text-xs uppercase tracking-[0.6em] font-bold text-[#3f5240]"
                 >
-                  Wedding Invitation
+                  Engagement Invitation
                 </motion.p>
 
                 <motion.div
@@ -553,7 +553,7 @@ export default function WeddingInvitation() {
                     {INVITATION.date.displayLong} · {INVITATION.time.reception}
                   </p>
                   <p className="text-[#3f5240]/70 text-xs md:text-sm tracking-[0.15em] font-medium font-cinzel leading-loose max-w-2xl mx-auto">
-                    Together with our families, we request the honour of your presence as we celebrate our wedding.
+                    Together with our families, we request the honour of your presence as we celebrate our engagement.
                   </p>
 
                   <a
@@ -923,7 +923,7 @@ export default function WeddingInvitation() {
                         </div>
                         <div>
                           <div className="text-[9px] uppercase tracking-[0.5em] font-bold text-[#3f5240]/40 font-cinzel">Time</div>
-                          <div className="text-sm md:text-base text-[#3f5240] font-cinzel tracking-wide font-bold">Wedding Ceremony at {INVITATION.time.ceremony}</div>
+                          <div className="text-sm md:text-base text-[#3f5240] font-cinzel tracking-wide font-bold">Engagement Ceremony at {INVITATION.time.ceremony}</div>
                         </div>
                       </div>
 
@@ -958,98 +958,6 @@ export default function WeddingInvitation() {
               </div>
             </section>
 
-
-            {/* Venue Location Section */}
-            <section className="relative py-28 md:py-48 bg-[#fdfaf5] overflow-hidden">
-              {/* Floral Decorations */}
-              <img src="/images/44.png" className="absolute top-0 right-0 w-32 sm:w-48 md:w-64 z-20 pointer-events-none opacity-80" alt="" />
-              <img src="/images/f.png" className="absolute bottom-0 left-0 w-32 sm:w-48 md:w-64 z-20 pointer-events-none opacity-80" alt="" />
-
-              {/* Decorative Geometric Elements (CSS-Based UI Decorations) */}
-              <div className="absolute -top-24 -left-24 w-[500px] h-[500px] border border-[#5c715e]/10 rounded-full flex items-center justify-center opacity-30 pointer-events-none">
-                <div className="w-[80%] h-[80%] border border-[#3f5240]/10 rounded-full" />
-                <div className="w-[60%] h-[60%] border border-[#5c715e]/10 rounded-full" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-px h-full bg-gradient-to-b from-transparent via-[#5c715e]/20 to-transparent rotate-45" />
-              </div>
-
-              <div className="container mx-auto px-6 max-w-7xl relative z-10 text-center">
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="space-y-10 mb-24"
-                >
-                  <div className="flex flex-col items-center gap-4">
-                    <span className="text-[#3f5240] font-bold uppercase tracking-[0.8em] text-[10px] md:text-xs opacity-40">T H E · V E N U E</span>
-                    <div className="flex items-center gap-2">
-                      {[1, 2, 3].map((i) => (
-                        <div key={i} className={`w-1.5 h-1.5 rotate-45 ${i === 2 ? "bg-[#5c715e]" : "bg-[#3f5240]/20"}`} />
-                      ))}
-                    </div>
-                  </div>
-
-                  <h2 className="font-cinzel text-5xl md:text-9xl bg-gradient-to-br from-[#5c715e] to-[#2c3a2d] bg-clip-text text-transparent leading-tight font-light uppercase tracking-tight relative">
-                    {INVITATION.venue.name.split(" ")[0].toUpperCase()} <span className="block md:inline font-playball normal-case text-4xl md:text-8xl bg-gradient-to-r from-[#3f5240] to-[#5c715e] bg-clip-text text-transparent md:-ml-8 relative z-10 translate-y-4 md:translate-y-0 italic drop-shadow-sm">{INVITATION.venue.name.split(" ").slice(1).join(" ")}</span>
-                  </h2>
-
-                  <div className="max-w-xl mx-auto pt-10 relative">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-[#c7d7c4]" />
-                    <p className="text-[#3f5240]/80 text-sm md:text-base tracking-[0.2em] font-medium uppercase font-cinzel leading-loose pt-8">
-                      WHERE TRADITION MEETS THE BEAUTY OF NEW BEGINNINGS
-                    </p>
-                  </div>
-                </motion.div>
-
-                <div className="max-w-4xl mx-auto w-full">
-                  {/* Architectural Map Frame */}
-                  <div>
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.95 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1.2, ease: "circOut" }}
-                      className="relative w-full aspect-[4/3] md:aspect-video lg:aspect-[4/3] rounded-[3rem] overflow-hidden shadow-[0_80px_150px_-30px_rgba(0,0,0,0.25)] group bg-white"
-                    >
-                      {/* The Map */}
-                      <iframe
-                        src={`https://maps.google.com/maps?q=${encodeURIComponent(INVITATION.venue.mapQuery)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
-                        width="100%"
-                        height="100%"
-                        style={{ border: 0 }}
-                        allowFullScreen
-                        loading="lazy"
-                        className="w-full h-full transition-all duration-1000 scale-[1.02] group-hover:scale-100"
-                      />
-
-                      {/* Decorative Frame Overlays */}
-                      <div className="absolute inset-0 pointer-events-none border-[15px] md:border-[25px] border-white/95 rounded-[3rem]" />
-                      <div className="absolute inset-8 md:inset-12 pointer-events-none border border-white/20 rounded-[2.5rem]" />
-
-                      {/* Arched Corner Floating Element (No image used) */}
-                      <div className="absolute top-0 right-0 w-40 h-40 bg-white/90 backdrop-blur-md flex flex-col items-center justify-center rounded-bl-full shadow-2xl p-8 transform translate-x-4 -translate-y-4 group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform duration-700">
-                        <MapPin className="w-8 h-8 text-[#3f5240] mb-2 opacity-80" />
-                        <span className="text-[8px] font-bold uppercase tracking-widest text-[#3f5240]/50">Explore</span>
-                      </div>
-
-                      {/* Subtle lens flare overlay */}
-                      <div className="absolute inset-0 pointer-events-none bg-gradient-to-tr from-[#5c715e]/5 to-transparent mix-blend-overlay" />
-                    </motion.div>
-
-                    {/* Bottom Floating Card Decoration */}
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.6 }}
-                      className="inline-flex items-center gap-4 mt-8 px-8 py-3 bg-white border border-[#c7d7c4]/40 shadow-lg rounded-full"
-                    >
-                      <Sparkles className="w-4 h-4 text-[#5c715e]" />
-                      <span className="text-[10px] md:text-xs font-bold text-[#3f5240] uppercase tracking-widest">{INVITATION.venue.city}</span>
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
-            </section>
 
             {/* Countdown Section */}
             <section className="relative py-28 md:py-48 bg-[#3f5240] flex flex-col items-center overflow-hidden">
