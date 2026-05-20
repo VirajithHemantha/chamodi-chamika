@@ -26,7 +26,7 @@ const INVITATION = {
   },
   rsvpContacts: [
     "Chamodi 0772261022",
-    "Chamika Mom 0771537039",
+    "Chamika (WhatsApp) +61 466 272 720",
   ],
 } as const;
 
@@ -584,7 +584,7 @@ export default function WeddingInvitation() {
             </section>
 
             {/* Wedding Details Section */}
-            <section id="details" className="relative pt-12 md:pt-20 pb-24 md:pb-32 w-full flex flex-col items-center bg-[#c7d7c4]/10 overflow-hidden">
+            <section id="details" className="relative pt-12 md:pt-20 pb-12 md:pb-20 w-full flex flex-col items-center bg-[#c7d7c4]/10 overflow-hidden">
 
               {/* Ornate Frame Border Overlay */}
               <div className="absolute inset-4 md:inset-8 border-[1.5px] border-[#4a5d23]/30 pointer-events-none z-10" />
@@ -595,7 +595,7 @@ export default function WeddingInvitation() {
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  className="flex flex-col items-center mb-16 space-y-6"
+                  className="flex flex-col items-center mb-6 md:mb-12 space-y-6"
                 >
                   <div className="flex items-center gap-4 opacity-40">
                     <div className="h-px w-8 bg-[#3f5240]" />
@@ -603,21 +603,21 @@ export default function WeddingInvitation() {
                     <div className="h-px w-8 bg-[#3f5240]" />
                   </div>
 
-                  <div className="text-[#3f5240] space-y-4">
-                    <div className="space-y-4 mb-8">
-                      <p className="font-cinzel text-[11px] md:text-sm tracking-[0.4em] mb-2 uppercase font-bold">Two Families Join Hands</p>
-                      <div className="flex flex-col items-center justify-center gap-2">
-                        <span className="text-sm md:text-base font-cinzel tracking-wider text-stone-700">Mr. Ruwan Sumith & Mrs. Nirosha Athurupana</span>
-                        <span className="font-playball text-2xl text-[#5c715e] italic my-2">Together with</span>
-                        <span className="text-sm md:text-base font-cinzel tracking-wider text-stone-700">Mr. Thilak Damitha Kumara & Mrs. Sandya Hemali</span>
+                  <div className="text-[#3f5240] space-y-4 w-full">
+                    <div className="space-y-6 md:space-y-4 mb-6 md:mb-8">
+                      <p className="font-cinzel text-[11px] md:text-sm tracking-[0.4em] mb-4 md:mb-2 uppercase font-bold">Two Families Join Hands</p>
+                      <div className="flex flex-col items-center justify-center gap-4 md:gap-2">
+                        <span className="text-sm md:text-base font-cinzel tracking-wider text-stone-700 leading-normal px-4">Mr. Ruwan Sumith & Mrs. Nirosha Athurupana</span>
+                        <span className="font-playball text-2xl md:text-3xl text-[#5c715e] italic my-2 md:my-3">Together with</span>
+                        <span className="text-sm md:text-base font-cinzel tracking-wider text-stone-700 leading-normal px-4">Mr. Thilak Damitha Kumara & Mrs. Sandya Hemali</span>
                       </div>
                     </div>
 
-                    <p className="text-[10px] md:text-[13px] tracking-[0.2em] md:tracking-[0.4em] uppercase font-medium leading-loose max-w-3xl border-t border-b border-[#c7d7c4]/50 py-6">
+                    <p className="text-[10px] md:text-[13px] tracking-[0.2em] md:tracking-[0.4em] uppercase font-medium leading-[2.5] md:leading-loose max-w-3xl border-t border-b border-[#c7d7c4]/50 py-6 md:py-8">
                       With hearts full of love, we request the honour of the presence of<br />
-                      <span className="text-[#5c715e] font-bold text-xs md:text-sm my-2 block">Our Honored Guests</span>
+                      <span className="text-[#5c715e] font-bold text-sm md:text-base my-3 block">Our Honored Guests</span>
                       to celebrate the joyous marriage of our children<br />
-                      <span className="text-[#5c715e] font-bold text-base md:text-xl my-2 block font-playball">{INVITATION.couple.brideFull} & {INVITATION.couple.groomFull}</span>
+                      <span className="text-[#5c715e] font-bold text-lg md:text-2xl mt-4 block font-playball">{INVITATION.couple.brideFull} & {INVITATION.couple.groomFull}</span>
                     </p>
                   </div>
                 </motion.div>
@@ -862,7 +862,7 @@ export default function WeddingInvitation() {
             </section>
 
             {/* Engagement Details Section */}
-            <section className="relative py-20 md:py-28 bg-white overflow-hidden">
+            <section className="relative py-12 md:py-20 bg-white overflow-hidden">
               <div className="container mx-auto px-6 max-w-5xl relative z-10 text-center">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -874,7 +874,7 @@ export default function WeddingInvitation() {
                 </motion.div>
 
                 {/* Names Card */}
-                <div className="relative w-full flex flex-col items-center justify-center my-12 mb-24">
+                <div className="relative w-full flex flex-col items-center justify-center mt-12 mb-8">
                   <motion.div
                     initial={{ opacity: 0, y: 24 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -960,7 +960,7 @@ export default function WeddingInvitation() {
 
 
             {/* Countdown Section */}
-            <section className="relative py-28 md:py-48 bg-[#3f5240] flex flex-col items-center overflow-hidden">
+            <section className="relative py-12 md:py-24 bg-[#3f5240] flex flex-col items-center overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/20 via-transparent to-black/20 pointer-events-none" />
 
               {/* Floating Decorative Shapes */}
