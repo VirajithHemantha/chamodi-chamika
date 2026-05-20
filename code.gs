@@ -2,14 +2,14 @@
  * Google Apps Script Web App for Wedding RSVP + Wishes
  *
  * Spreadsheet:
- * https://docs.google.com/spreadsheets/d/1DWeuLq0XoCdg0PFXg_uoCuHjW_WVnyam6z0V-zTWn9g/edit
+ * https://docs.google.com/spreadsheets/d/1uGmhFXDb6pmIye6Ym3sv665dNqgIO7V_64nTaOtRcb8/edit?usp=sharing
  *
  * Required sheets:
  * - rsvp
  * - wish
  */
 
-const SPREADSHEET_ID = "1s7CtSYuu0PeysjHKpaA7d8LQVb_d7xe87XkUu_KQ9lY";
+const SPREADSHEET_ID = "1uGmhFXDb6pmIye6Ym3sv665dNqgIO7V_64nTaOtRcb8";
 const RSVP_SHEET_NAME = "rsvp";
 const WISH_SHEET_NAME = "wish";
 

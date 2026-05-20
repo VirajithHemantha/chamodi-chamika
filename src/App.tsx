@@ -31,7 +31,7 @@ const INVITATION = {
 } as const;
 
 const backgroundMusic = "/WhatsApp Video 2026-05-18 at 02.14.52 (1).mp3";
-const googleScriptUrl = "https://script.google.com/macros/s/AKfycbyHN1BshRvxx96eATyW9C0rtkaNFXAoNAe9lh0TiO1uJ-eKzlwXTKglqTUSz5ZH-CoKqA/exec";
+const googleScriptUrl = "https://script.google.com/macros/s/AKfycbwhKuDxvxU7cs8qO89GSzknQS-zcMDFveClaH2CszQj2qVF3CFaAy-xMBiCiK6eBBwE/exec";
 
 const publicImagePath = (fileName: string) => `/images/${fileName.replaceAll(" ", "%20")}`;
 
